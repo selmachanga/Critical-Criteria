@@ -62,7 +62,7 @@
       <p>
         The depth is greater than 1000 m, with storage units deeper than 800 m?
       </p>
-      <form action="#" method="post" onsubmit="VerificaCritico()">
+      <form action="#" method="post" onsubmit="return VerificaCritico()">
         <p>
           <input
             type="radio"
@@ -130,12 +130,7 @@
         );
         var soma = depth + seal + pressure;
         if (soma == 3) {
-          let next = document.querySelector("button");
-          next.addEventListener(
-            "click",
-            (window.location.href =
-              "https://bucolic-quokka-bac877.netlify.app/")
-          );
+          window.location.href = "https://bucolic-quokka-bac877.netlify.app/";
         } else {
           alert(
             "Not suitable for CO₂ storage because of the high risk of compromising the safety and security of storage (base on the eliminatory criteria developed by Valer (2010) )"
